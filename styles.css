@@ -1,0 +1,314 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Arial Unicode", Sans-serif;
+  font-size: 16px;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.covidCert {
+  max-width: 900px;
+  padding: 15px;
+}
+.covidCert .covidTop {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.covidCert .logoC,
+.covidCert .patientC {
+  max-width: 200px;
+  max-height: 90px;
+  object-fit: contain;
+}
+.covidCert .patientC {
+  width: 100px;
+  max-height: 100px;
+  object-fit: contain;
+}
+.cert .patientC {
+  width: 150px;
+  max-height: 190px;
+}
+.covidCert .medInfo {
+  width: 100%;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 16px;
+  padding: 5px 15px 5px 0;
+}
+.covidCert .medInfo.nameCert {
+  background: #42816c;
+  text-align: center !important;
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 10px;
+}
+.covidCert .covidTop.certGen {
+  margin-bottom: 20px;
+}
+.covidCert .covidTop.certGen .medInfo {
+  text-align: left;
+}
+.covidCert .medInfo span {
+  display: inline-block;
+  line-height: normal;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.covidCert .patientInfo {
+  line-height: 1.5;
+  font-size: 13px;
+  margin-top: 25px;
+}
+.covidCert .patientInfo > div {
+  align-items: center;
+}
+.covidCert .patientInfo div > div {
+  justify-content: space-between;
+  padding-left: 10px;
+}
+.patient_info {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+}
+.covidCert .patient_info > div:first-child {
+  flex: 1;
+  min-width: 300px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.covidCert .patient_info > div:last-child {
+  flex: 1;
+  min-width: 150px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.covidCert .patient_info strong {
+  line-height: 1.1;
+  font-size: 0.9rem;
+}
+.covidCert .patient_info span em {
+  font-size: 12px;
+  margin-right: 10px;
+}
+.covidCert .patientInfo .text_patient {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.covidCert .patientInfo .text_patient strong {
+  line-height: 1.1;
+}
+.covidCert .patientInfo .text_patient strong em {
+  font-size: 0.7rem;
+  font-weight: normal;
+}
+.covidCert .patientInfo span em {
+  font-size: 12px;
+  margin-right: 10px;
+}
+.covidCert .testTable {
+  width: 100%;
+  display: table;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  margin: 15px 0;
+}
+.covidCert .testTable .row {
+  display: table-row;
+}
+.covidCert .testTable .row.hd {
+  text-align: center;
+  font-weight: bold;
+  background: #eee;
+}
+.covidCert .testTable .row > div {
+  display: table-cell;
+  font-size: 12px;
+  border: 1px solid #000;
+  border-right: 0;
+  border-bottom: 0;
+  padding: 5px;
+}
+.covidCert .testTable .row > div:last-child,
+.covidCert .testTable .row > div:nth-last-child(2) {
+  width: 150px;
+  text-align: center;
+}
+.covidCert .testDate {
+  font-size: 12px;
+}
+.covidCert .testDate strong {
+  font-size: 13px;
+}
+.covidCert .addressTest {
+  font-size: 12px;
+  margin-top: 20px;
+}
+.covidCert .addressTest span {
+  float: left;
+}
+.covidCert .addressTest span:nth-child(2) {
+  line-height: 1.5;
+  font-weight: bold;
+  padding-left: 5px;
+}
+.covidCert .qr_block {
+  font-weight: bold;
+  font-size: 12px;
+  margin-top: 20px;
+}
+.covidCert .qr_text {
+  float: left;
+  font-weight: normal;
+  font-size: 12px;
+  margin-top: 10px;
+}
+.covidCert .mobileT {
+  display: none;
+}
+.covidCert .qrCode {
+  float: left;
+  width: 128px;
+  height: 128px;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+.covidCert .qr_flex {
+  display: flex;
+  align-items: flex-start;
+}
+.covidCert .printHide {
+  display: inline;
+}
+
+.red {
+  background: #f9d5dc;
+}
+.green {
+  background: #e1f9f4;
+}
+.grey {
+  background: #f8f8f8;
+}
+.stateName {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 15px;
+}
+@media screen and (max-width: 750px) {
+  .covidCert .logoC {
+    max-width: 100px;
+  }
+  .covidCert .patientInfo > div {
+    align-items: flex-start;
+  }
+}
+@media screen and (max-width: 710px) {
+  .stateName {
+    display: none;
+  }
+}
+@media screen and (max-width: 610px) {
+  .covidCert .testTable {
+    display: none;
+  }
+  .covidCert .mobileT {
+    display: table;
+  }
+  .covidCert .covidTop div:nth-child(2) {
+    order: 3;
+  }
+  .covidCert .covidTop div:nth-child(3) {
+    order: 2;
+  }
+  .covidCert .covidTop {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .covidCert .covidTop.certGen {
+    justify-content: center;
+  }
+
+  .covidCert .medInfo {
+    text-align: center !important;
+    padding: 5px 15px;
+    margin-top: 15px;
+  }
+  .covidCert .medInfo.nameCert {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .covidCert .qr_block {
+    text-align: center;
+  }
+  .covidCert .qrCode {
+    float: none;
+    margin: 10px auto auto auto;
+  }
+  .covidCert .qr_flex {
+    display: block;
+  }
+  .covidCert .cert > div {
+    display: block !important;
+    text-align: center;
+  }
+  .covidCert .cert .patient_info {
+    text-align: center;
+    padding-left: 0;
+  }
+  covidCert .cert .patient_info > div {
+    padding-left: 0 !important;
+  }
+}
+
+@media print {
+  .stateName {
+    display: flex;
+  }
+  @page {
+    margin: 20px 0 0 20px;
+    padding: 0;
+  }
+  br {
+    line-height: 10pt;
+  }
+  covidCert .medInfo {
+    margin-top: 8pt;
+  }
+  .covidCert .addressTest {
+    margin-top: 8pt;
+  }
+  .covidCert .testTable {
+    margin-bottom: 0;
+  }
+  .covidCert .qr_block {
+    margin-top: 5pt;
+  }
+  .covidCert .logoC {
+    max-width: 100px;
+  }
+  .covidCert .printHide {
+    display: none;
+  }
+  * {
+    -webkit-print-color-adjust: exact !important; /* Chrome, Safari */
+    color-adjust: exact !important; /*Firefox*/
+  }
+}
